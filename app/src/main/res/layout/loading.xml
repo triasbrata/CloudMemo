@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:id="@+id/loading_screen">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:gravity="center_horizontal|center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avloadingIndicatorView"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:indicator="LineScale"
+                app:indicator_color="@color/icons" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/icons"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/text_loading"
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

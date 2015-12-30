@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CloudMemo</string>
+    <string name="password_hint">Password</string>
+    <string name="password_error">Password di butuhkan </string>
+    <string name="username_error">Email di butuhkan </string>
+    <string name="username_hint">Email</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="title_activity_login_main">LoginMain</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btn_sigin">Masuk</string>
+    <string name="btn_singup">Daftar Baru</string>
+    <string name="title_activity_home">Cloud Memo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tambah_note">Tambah Note</string>
+    <string name="title_hint">Judul Note</string>
+    <string name="message_hint">Isi Note</string>
+    <string name="btn_simpan_note">Simpan Tulisan</string>
+    <string name="menyimpan">Menyimpan Catatan ...</string>
+    <string name="username_error_not_email">Email harus mengandung @</string>
+    <string name="login_error">Terjadi kesalahan pada saat login</string>
+    <string name="username_error_not_email_dot">Email harus mengandung dot \".\"</string>
+    <string name="icon_date">\uf017</string>
+    <string name="test">Test Test</string>
+    <string name="buat_akun">Buat Akun Baru</string>
+    <string name="pertanyaan_akun_baru">Belum punya akun ?</string>
+    <string name="register">Daftar Akun Baru</string>
+    <string name="nama_hint">Nama pengguna</string>
+    <string name="nama_error">Nama pengguna dibutuhkan</string>
+    <string name="register_error">Terjadi kesalaahn pada saat register, silahkan melakukan pengisian form lagi</string>
+    <string name="title_activity_master">MasterActivity</string>
+    <string name="setting_ubah_catatan">Ubah Catatan</string>
+    <string name="hapus_catatan">Hapus catatan</string>
+</resources>
