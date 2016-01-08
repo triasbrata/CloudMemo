@@ -52,7 +52,7 @@ public class TambahNote extends MasterActivity {
         setContentView(R.layout.activity_home);
         getLayoutInflater().inflate(R.layout.content_tambah_note, getMasterLayout(), true);
 
-        note = (Note) getIntent().getParcelableExtra("data");
+        note = getIntent().getParcelableExtra("data");
         title = (TextView) findViewById(R.id.input_title);
         message = (TextView) findViewById(R.id.input_message);
         slide_down = AnimationUtils.loadAnimation(this,R.anim.slide_down);
@@ -111,6 +111,7 @@ public class TambahNote extends MasterActivity {
         String url = Conf.masterURL+"note";
         JSONObject post = new JSONObject(data);
         int method = (note != null) ? Request.Method.PATCH : Request.Method.POST;
+        Log.d("isi form", post.toString());
         JsonObjectRequest strReq = new JsonObjectRequest(method, url, post, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(final JSONObject response) {

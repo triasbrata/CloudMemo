@@ -37,7 +37,7 @@ public class ViewNote extends MasterActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        note = (Note) getIntent().getParcelableExtra("data");
+        note = getIntent().getParcelableExtra("data");
         setContentView(R.layout.activity_home);
         ACTION_URL = Conf.masterURL+"note/"+ note.getId();
 
@@ -77,7 +77,6 @@ public class ViewNote extends MasterActivity {
                             Intent i = new Intent(ViewNote.this,Home.class);
                             i.putExtra("notif_delete",true);
                             startActivity(i);
-                            return;
                         } catch (JSONException e) {
                             Log.d("debuggin", "JSONEXception", e);
                         }
@@ -105,5 +104,13 @@ public class ViewNote extends MasterActivity {
                 break;
         }
         return  super.onOptionsItemSelected(item);
+    }
+    protected void makeIntentListNote(){
+        startActivity(new Intent(ViewNote.this, Home.class));
+    }
+
+    @Override
+    protected void makeIntentCreateNote() {
+        startActivity(new Intent(ViewNote.this,TambahNote.class));
     }
 }

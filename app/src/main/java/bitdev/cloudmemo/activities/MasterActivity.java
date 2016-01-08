@@ -33,7 +33,7 @@ public class MasterActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        TextView nama_user = (TextView) findViewById(R.id.app_bar_home_view).findViewById(R.id.nama_user);
+//        TextView nama_user = (TextView) findViewById(R.id.app_bar_home_view).findViewById(R.id.nama_user);
 //        TextView email_uer = (TextView) findViewById(R.id.app_bar_home).findViewById(R.id.nama_user);
 //        if(nama_user != null){
 //            nama_user.setText(cache.getPref().getString("name",""));
