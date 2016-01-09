@@ -44,6 +44,10 @@
             android:name=".activities.MasterActivity"
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.About"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
